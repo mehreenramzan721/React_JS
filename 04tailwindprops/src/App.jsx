@@ -9,8 +9,10 @@ function App() {
 
   return (
     <>
-      <h1 className='bg-green-400 text-black p-4 rounded-xl'>Tailwind TEST</h1>
-    // copy the code from tailwind css website
+      <h1 className='bg-green-400 text-black p-4 rounded-xl mg-4'>Tailwind TEST</h1>
+
+      {/* 
+          // copy the code from tailwind css website
       <div className="flex flex-col items-center gap-6 p-7 md:flex-row md:gap-8 rounded-2xl">
       <div>
         <img className="size-48 shadow-xl rounded-md" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBB4LQTn0vRq4ydPLp-uTj_lEUHOHYWUU18JlCq5KuMw&s=10" />
@@ -24,7 +26,7 @@ function App() {
           <span>2025</span>
         </span>
       </div>
-    </div>
+    </div> */}
     </>
   )
 }
