@@ -8,13 +8,16 @@ import './App.css'
 
 function App() {
   // useState(15);
-  const [counter , setCounter] = useState(15);
+  let [counter , setCounter] = useState(15);
 
   // let counter = 5;
   function addValue(){
     // console.log("Value added : ", Math.random())
-    counter++;
-    console.log(counter)
+    // counter++;    we can't update it like this because we are using hooks
+    // instead: 
+    setCounter(counter+1);
+
+    // console.log(counter)
   }
   return (
     <>
