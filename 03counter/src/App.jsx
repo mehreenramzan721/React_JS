@@ -7,8 +7,10 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
+  // useState(15);
+  const [counter , setCounter] = useState(15);
 
-  let counter = 5;
+  // let counter = 5;
   function addValue(){
     // console.log("Value added : ", Math.random())
     counter++;
