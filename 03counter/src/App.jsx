@@ -14,10 +14,17 @@ function App() {
   function addValue(){
     // console.log("Value added : ", Math.random())
     // counter++;    we can't update it like this because we are using hooks
-    // instead: 
+    // instead:
+    if(counter < 20) 
     setCounter(counter+1);
 
     // console.log(counter)
+  }
+
+  function removeValue(){
+    if(counter>0){
+      setCounter(counter -1);
+    }
   }
   return (
     <>
@@ -26,7 +33,7 @@ function App() {
     <button onClick={addValue}>Add value</button>
     <h3>{counter}</h3>
     <br/>
-    <button>Decrease value</button>
+    <button onClick={removeValue}>Decrease value</button>
     </>
   )
 }
