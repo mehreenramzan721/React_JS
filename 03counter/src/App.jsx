@@ -16,7 +16,17 @@ function App() {
     // counter++;    we can't update it like this because we are using hooks
     // instead:
     if(counter < 20) 
-    setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+
+      // setCounter(()=>{})
+        setCounter( prevCounter => prevCounter + 1 )
+        setCounter( prevCounter => prevCounter + 1 )
+        setCounter( prevCounter => prevCounter + 1 )
+        setCounter( prevCounter => prevCounter + 1 )
+
 
     // console.log(counter)
   }
